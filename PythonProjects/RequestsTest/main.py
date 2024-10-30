@@ -24,11 +24,11 @@ body_pokeball = {
 }
 
 
-'''response = requests.post(url=f'{URL}/pokemons', headers = HEADER, json = body_create)
-print(response.text)'''
+response = requests.post(url=f'{URL}/pokemons', headers = HEADER, json = body_create)
+print(response.text)
 
-'''response = requests.put(url=f'{URL}/pokemons',  headers = HEADER, json = change)
-print(response.text)'''
+response = requests.put(url=f'{URL}/pokemons',  headers = HEADER, json = change)
+print(response.text)
 
 response = requests.post(url=f'{URL}/trainers/add_pokeball',  headers = HEADER, json = body_pokeball)
 print(response.text)
